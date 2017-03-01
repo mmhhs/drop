@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.little.drop.ultimate.VerticalSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drop_ultimate_recycler_view_refreshLayout"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/drop_ultimate_recycler_view_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.little.drop.ultimate.VerticalSwipeRefreshLayout>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:src="@mipmap/drop_arrow_up"
+        android:background="@drawable/drop_oval_transparent"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="25dp"
+        android:visibility="gone"
+        android:id="@+id/drop_ultimate_recycler_view_arrow"
+        />
+
+</FrameLayout>

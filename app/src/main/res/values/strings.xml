@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Drop</string>
+    <string name="drop_pull_to_refresh">下拉刷新</string>
+    <string name="drop_release_to_refresh">释放立即刷新</string>
+    <string name="drop_refreshing">正在刷新...</string>
+    <string name="drop_refresh_success">刷新成功</string>
+    <string name="drop_refresh_fail">刷新失败</string>
+    <string name="drop_pull_up_to_load">上拉加载更多</string>
+    <string name="drop_release_to_load">释放立即加载</string>
+    <string name="drop_loading">正在加载...</string>
+    <string name="drop_load_success">加载成功</string>
+    <string name="drop_load_fail">加载失败</string>
+</resources>

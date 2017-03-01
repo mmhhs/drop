@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="drop_pull_bottom">#b8b8b8</color>
+    <color name="drop_pull_top">#b8b8b8</color>
+    <color name="drop_progress_bar_bg">#d9d9d9</color>
+    <color name="drop_progress_bar_on1">#396bef</color>
+    <color name="drop_progress_bar_on2">#43b4fc</color>
+    <color name="drop_white">#ffffff</color>
+    <color name="drop_black">#000000</color>
+    <color name="drop_transparent">#70000000</color>
+    <color name="drop_deep_grey">#484848</color>
+</resources>
