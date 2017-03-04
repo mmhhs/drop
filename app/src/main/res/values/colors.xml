@@ -9,4 +9,5 @@
     <color name="drop_black">#000000</color>
     <color name="drop_transparent">#70000000</color>
     <color name="drop_deep_grey">#484848</color>
+    <color name="drop_light_grey">#999999</color>
 </resources>
