@@ -84,10 +84,10 @@ public class AnimationRecyclerView extends FrameLayout{
 
     private void initViews() {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.drop_ultimate_recycler_view, this);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.drop_ultimate_recycler_view_recyclerView);
-        arrowImage = (ImageView)view.findViewById(R.id.drop_ultimate_recycler_view_arrow);
-        refreshLayout = (AnimationRefreshLayout) view.findViewById(R.id.drop_ultimate_recycler_view_refreshLayout);
+        View view = inflater.inflate(R.layout.drop_animation_recycler_view, this);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.drop_animation_recycler_view_recyclerView);
+        arrowImage = (ImageView)view.findViewById(R.id.drop_animation_recycler_view_arrow);
+        refreshLayout = (AnimationRefreshLayout) view.findViewById(R.id.drop_animation_recycler_view_refreshLayout);
         if (mRecyclerView != null) {
             mRecyclerView.setClipToPadding(mClipToPadding);
             if (mPadding != -0.0f) {
@@ -239,6 +239,22 @@ public class AnimationRecyclerView extends FrameLayout{
     public void enableRefresh(boolean canRefresh) {
         refreshLayout.setCanRefresh(canRefresh);
         refreshLayout.setCanLoad(false);
+    }
+
+    /**
+     * 设置刷新模式
+     * @param isSecond 是否使用第二种模式：动画；箭头
+     */
+    public void setRefreshMode(boolean isSecond){
+        refreshLayout.setIsSecond(isSecond);
+    }
+
+    /**
+     * 设置显示访问结果
+     * @param showResultTip
+     */
+    public void setShowResultTip(boolean showResultTip){
+        refreshLayout.setShowResultTip(showResultTip);
     }
 
     /**

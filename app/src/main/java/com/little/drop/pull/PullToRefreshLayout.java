@@ -584,7 +584,7 @@ public class PullToRefreshLayout extends RelativeLayout
 	//change pullView
 	public void setPullViewImageResource() {
 		if (isSecond) {
-			pullView.setImageResource(R.drawable.drop_anim_loading);
+			pullView.setImageResource(R.anim.drop_anim_loading);
 			animationDrawableHeader = (AnimationDrawable)pullView.getDrawable();
 		}
 	}

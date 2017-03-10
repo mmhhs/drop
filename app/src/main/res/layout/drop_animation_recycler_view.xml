@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.little.drop.pull.AnimationRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drop_animation_recycler_view_refreshLayout"
+        >
+        <include layout="@layout/drop_pull_refresh_head" />
+        <com.little.drop.pull.PullableRecyclerView
+            android:id="@+id/drop_animation_recycler_view_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <include layout="@layout/drop_pull_load_more" />
+    </com.little.drop.pull.AnimationRefreshLayout>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:src="@mipmap/drop_arrow_up"
+        android:background="@drawable/drop_oval_transparent"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="25dp"
+        android:visibility="gone"
+        android:id="@+id/drop_animation_recycler_view_arrow"
+        />
+
+</FrameLayout>
